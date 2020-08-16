@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": {
+                "type": "String",
+                "value": "westus"
+            }
+        },
+        "storageAccountName": {
+            "value": {
+                "type": "String",
+                "value": "expensetrackerfrontend"
+            }
+        },
+        "accountType": {
+            "value": {
+                "type": "String",
+                "value": "Standard_RAGRS"
+            }
+        },
+        "kind": {
+            "value": {
+                "type": "String",
+                "value": "StorageV2"
+            }
+        },
+        "accessTier": {
+            "value": {
+                "type": "String",
+                "value": "Hot"
+            }
+        },
+        "minimumTlsVersion": {
+            "value": {
+                "type": "String",
+                "value": "TLS1_0"
+            }
+        },
+        "supportsHttpsTrafficOnly": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "allowBlobPublicAccess": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "networkAclsBypass": {
+            "value": {
+                "type": "String",
+                "value": "AzureServices"
+            }
+        },
+        "networkAclsDefaultAction": {
+            "value": {
+                "type": "String",
+                "value": "Allow"
+            }
+        }
+    }
+}

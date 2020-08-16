@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": {
+                "type": "String",
+                "value": "b7d92161-60b6-46d5-8e2d-5d46a338bf27"
+            }
+        },
+        "name": {
+            "value": {
+                "type": "String",
+                "value": "expensetracker-frontend"
+            }
+        },
+        "location": {
+            "value": {
+                "type": "String",
+                "value": "Central US"
+            }
+        },
+        "hostingPlanName": {
+            "value": {
+                "type": "String",
+                "value": "ASP-SENGSE15013-abc5"
+            }
+        },
+        "serverFarmResourceGroup": {
+            "value": {
+                "type": "String",
+                "value": "SENG_SE15013"
+            }
+        },
+        "alwaysOn": {
+            "value": {
+                "type": "Bool",
+                "value": true
+            }
+        },
+        "sku": {
+            "value": {
+                "type": "String",
+                "value": "Standard"
+            }
+        },
+        "skuCode": {
+            "value": {
+                "type": "String",
+                "value": "S1"
+            }
+        },
+        "workerSize": {
+            "value": {
+                "type": "String",
+                "value": "0"
+            }
+        },
+        "workerSizeId": {
+            "value": {
+                "type": "String",
+                "value": "0"
+            }
+        },
+        "numberOfWorkers": {
+            "value": {
+                "type": "String",
+                "value": "1"
+            }
+        },
+        "currentStack": {
+            "value": {
+                "type": "String",
+                "value": "dotnetcore"
+            }
+        },
+        "phpVersion": {
+            "value": {
+                "type": "String",
+                "value": "OFF"
+            }
+        },
+        "errorLink": {
+            "value": {
+                "type": "String",
+                "value": "https://expensetracker-frontend.scm.azurewebsites.net/detectors?type=tools&name=eventviewer"
+            }
+        }
+    }
+}

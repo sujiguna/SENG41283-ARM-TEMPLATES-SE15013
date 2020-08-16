@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "type": "microsoft.alertsmanagement/smartdetectoralertrules",
+            "apiVersion": "2019-03-01",
+            "name": "Failure Anomalies - expensetracker-frontend",
+            "location": "global",
+            "properties": {
+                "description": "Failure Anomalies notifies you of an unusual rise in the rate of failed HTTP requests or dependency calls.",
+                "state": "Enabled",
+                "severity": "Sev3",
+                "frequency": "PT1M",
+                "detector": {
+                    "id": "FailureAnomaliesDetector",
+                    "parameters": null
+                },
+                "scope": [
+                    "/subscriptions/b7d92161-60b6-46d5-8e2d-5d46a338bf27/resourceGroups/SENG_SE15013/providers/microsoft.insights/components/expensetracker-frontend"
+                ],
+                "actionGroups": {
+                    "customEmailSubject": null,
+                    "customWebhookPayload": null,
+                    "groupIds": [
+                        "/subscriptions/b7d92161-60b6-46d5-8e2d-5d46a338bf27/resourceGroups/SENG_SE15013/providers/microsoft.insights/actionGroups/Application Insights Smart Detection"
+                    ]
+                },
+                "throttling": null
+            }
+        }
+    ]
+}

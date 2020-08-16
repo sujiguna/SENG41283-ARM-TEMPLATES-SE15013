@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": {
+                "type": "String",
+                "value": "expensetrackerie"
+            }
+        },
+        "location": {
+            "value": {
+                "type": "String",
+                "value": "Global"
+            }
+        },
+        "sku": {
+            "value": {
+                "type": "Object",
+                "value": {
+                    "name": "Standard_Microsoft"
+                }
+            }
+        },
+        "properties": {
+            "value": {
+                "type": "Object",
+                "value": {}
+            }
+        }
+    }
+}

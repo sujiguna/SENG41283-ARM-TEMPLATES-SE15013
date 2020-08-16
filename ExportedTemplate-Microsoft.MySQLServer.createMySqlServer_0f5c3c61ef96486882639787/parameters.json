@@ -1,0 +1,99 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "administratorLogin": {
+            "value": {
+                "type": "String",
+                "value": "gunaratn_se15013"
+            }
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "location": {
+            "value": {
+                "type": "String",
+                "value": "eastus"
+            }
+        },
+        "serverName": {
+            "value": {
+                "type": "String",
+                "value": "expensetracker"
+            }
+        },
+        "skuCapacity": {
+            "value": {
+                "type": "Int",
+                "value": 1
+            }
+        },
+        "skuFamily": {
+            "value": {
+                "type": "String",
+                "value": "Gen5"
+            }
+        },
+        "skuName": {
+            "value": {
+                "type": "String",
+                "value": "B_Gen5_1"
+            }
+        },
+        "skuSizeMB": {
+            "value": {
+                "type": "Int",
+                "value": 5120
+            }
+        },
+        "skuTier": {
+            "value": {
+                "type": "String",
+                "value": "Basic"
+            }
+        },
+        "version": {
+            "value": {
+                "type": "String",
+                "value": "5.7"
+            }
+        },
+        "backupRetentionDays": {
+            "value": {
+                "type": "Int",
+                "value": 7
+            }
+        },
+        "geoRedundantBackup": {
+            "value": {
+                "type": "String",
+                "value": "Disabled"
+            }
+        },
+        "previewFeature": {
+            "value": {
+                "type": "String",
+                "value": ""
+            }
+        },
+        "tags": {
+            "value": {
+                "type": "Object",
+                "value": {}
+            }
+        },
+        "storageAutoGrow": {
+            "value": {
+                "type": "String",
+                "value": "Enabled"
+            }
+        },
+        "infrastructureEncryption": {
+            "value": {
+                "type": "String",
+                "value": "Disabled"
+            }
+        }
+    }
+}
